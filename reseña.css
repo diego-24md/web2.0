@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#Fondo {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+/* Imagen central */
+#ImgReseña {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Botón para ir arriba */
+#btn-arriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#btn-arriba:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para párrafos */
+p {
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    #ImgReseña {
+        width: 90%;
+        height: auto;
+    }
+
+    p {
+        margin: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Media queries para pantallas muy pequeñas (celulares) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    p {
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+
+    #btn-arriba {
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px;
+    }
+}
+/* Fondo de Reseña.html */
+#Fondo{
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-borroso-blanco_1034-249.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Fin de Fondo de Reseña.html */
+  #ImgReseña{
+    height: 400px;
+    width:  400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Ajuste para el logo */
+  .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.regresar-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.regresar-btn:hover {
+    background-color: green;
+}

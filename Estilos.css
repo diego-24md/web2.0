@@ -1,0 +1,171 @@
+/* Diseño del Título */
+#titulo {
+  text-align: left; 
+  font-family: Arial Black; 
+  font-weight: bold; 
+  font-size: 500px; /* Aumenta el tamaño de la letra aquí */
+  background: #202020; 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+}
+/* Fin diseño del Título */
+
+/*CSS para el Card de abajo con una frase, junto a una imagen de la escuela*/
+.cta {
+	--shadowColor: 187 60% 40%;
+	display: flex;
+	flex-wrap: wrap;
+	background: rgb(108, 187, 232);
+	max-width: 50rem;
+	width: 100%;
+	box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+	border-radius: 0.8rem;
+	overflow: hidden;
+	border: 0.5rem solid;
+}
+
+.cta img {
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	flex: 1 1 300px;
+	outline: 0.5rem solid;
+}
+
+.cta__text-column {
+	padding: min(2rem, 5vw) min(2rem, 5vw) min(2.5rem, 5vw);
+	flex: 1 0 50%;
+}
+
+.cta__text-column > * + * {
+	margin: min(1.5rem, 2.5vw) 0 0 0;
+}
+
+.cta a {
+	display: inline-block;
+	color: black;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	background: rgb(18, 63, 212);
+	border-radius: 0.6rem;
+	font-weight: 700;
+	border: 0.35rem solid;
+}
+/*Fin CSS para el Card de abajo con una frase, junto a una imagen de la escuela*/
+
+/* Botón hacia arriba */
+#btn-arriba {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  font-size: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+}
+
+#btn-arriba:hover {   
+  background-color: #0056b3; 
+}
+/* Fin botón hacia arriba */
+
+/* Botón de Comentarios */
+.boton-enviar {
+  background-color: #28a745; /* Color de fondo verde */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px; /* Bordes bien redondeados */
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.2s ease; /* Efecto de movimiento al pasar el cursor */
+}
+.boton-enviar:hover {
+  transform: translateY(-2px); /* Mueve el botón ligeramente hacia arriba */
+  background-color: #218838; /* Color más oscuro al pasar el cursor */
+}
+/* Fin botón de Comentarios */
+
+/* Ajuste para los títulos */
+#titulo {
+  font-family: Arial Black;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Ajuste de fondo */
+#FondoPW {
+  background-color: #f5f5f5;
+}
+
+/* Ajuste de texto y tarjetas */
+.card-body {
+  padding: 1rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* Ajuste para que los botones no se desborden */
+.btn {
+  white-space: nowrap;
+}
+
+/* Diseño para la sección de "Sobre Nosotros" */
+.card-body h4 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Ajustes responsivos generales */
+@media (max-width: 767px) {
+  .nav-links li {
+    font-size: 1rem;
+  }
+
+  .navbar-brand, .btn {
+    font-size: 0.8rem;
+  }
+
+  .carousel-item img {
+    height: auto;
+  }
+
+  #titulo {
+    font-size: 1.5rem;
+  }
+
+  .cta__text-column h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Ajuste para los botones de tarjetas */
+  .btn-primary {
+    font-size: 0.8rem;
+  }
+}
+
+/* Personalizar el color de fondo de la navbar */
+.navbar-light {
+  background-color: #f8f9fa; /* Puedes cambiar este color */
+}
+
+/* Personalizar el color de los enlaces */
+.navbar-nav .nav-link {
+  color: #007bff; /* Cambia el color de los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3; /* Color al pasar el mouse */
+}
